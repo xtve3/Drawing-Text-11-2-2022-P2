@@ -5,6 +5,14 @@ String title = "Cyno", footer="Razor";
 PFont titleFont; 
 color purple=#A020F0, resetDefaultInk=#FFFFFF, red=#EA0707; //not dark mode friendly
 //
+void setup() {}//End setup
+//
+void draw() {}//End draw
+//
+void keyPressed() {}//End keyPressed
+//
+void mousePressed() {}//End mousePressed
+//End Main Program
 size(500,600); //Portrait
 //Copy Display Algorithm 
 appWidth = width;
