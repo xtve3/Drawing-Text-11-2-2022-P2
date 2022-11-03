@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, fontSize;
-float titleX, titleY, titleWidth, titleHeight;
+float titleX, titleY, titleWidth, titleHeight, footerX, footerY, footerWidth, footerHeight;
 String title = "Cyno";
 PFont titleFont; 
 color purple=#A020F0, resetDefaultInk=#FFFFFF; //not dark mode friendly
@@ -11,10 +11,11 @@ appWidth = width;
 appHeight = height;
 //
 //Population
-titleX = appWidth * 1/4;
+titleX = footerX = appWidth * 1/4;
 titleY = appHeight * 1/10;
-titleWidth = appWidth * 1/2;
-titleHeight = appHeight * 1/6;
+footerY = appHeight * 9/10;
+titleWidth = footerWidth = appWidth * 1/2;
+titleHeight = footerHeight = appHeight * 1/6;
 //
 //Text Setup, single executed code
 //Fonts from OS (Operating System)
@@ -25,6 +26,7 @@ titleFont = createFont("Segoe Print", 55); //Verified the font exists in Process
 //
 //Layout or text space and typographical features 
 rect(titleX, titleY, titleWidth, titleHeight);
+rect(footerX, footerY, footerWidth, footerHeight);
 //
 //Repeated Execited Code
 fill(purple);
